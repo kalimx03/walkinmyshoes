@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WalkInMyShoes - Immersive Empathy Training</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- A-Frame for WebXR features -->
+  <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.0.0/dist/aframe-extras.min.js"></script>
+  <style>
+    body { margin: 0; padding: 0; overflow-x: hidden; }
+    #root { height: 100vh; display: flex; flex-direction: column; }
+    /* Ensure A-Frame scene doesn't overlap UI unless active */
+    .a-canvas { z-index: 0; position: absolute !important; }
+    .ui-layer { z-index: 10; position: relative; pointer-events: none; }
+    .ui-layer * { pointer-events: auto; }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "recharts": "https://esm.sh/recharts@^3.7.0"
+  }
+}
+</script>
+</head>
+<body class="bg-slate-950 text-slate-50 font-sans">
+  <div id="root"></div>
+</body>
+</html>

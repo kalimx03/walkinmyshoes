@@ -1,0 +1,8 @@
+{
+  "name": "WalkInMyShoes",
+  "description": "An immersive WebXR application designed to build empathy by experiencing the world through different disability perspectives and auditing real-world accessibility.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
